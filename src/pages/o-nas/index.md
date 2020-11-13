@@ -1,6 +1,6 @@
 ---
 templateKey: 'about-page'
-path: /o-nas
+path: /porota
 title: About our values
 ---
 ### Shade-grown coffee
