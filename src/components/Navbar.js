@@ -39,10 +39,16 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
+        <div className="top-bar">
+          <div className="container">
+            jano@tabacka.sk
+          </div>
+        </div>
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" />
+              {/* <img src={logo} alt="Kaldi" /> */}
+              Sám doma
             </Link>
             {/* Hamburger menu */}
             <div

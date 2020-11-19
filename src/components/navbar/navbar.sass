@@ -1,7 +1,20 @@
 
+$navbar-height: 4.85rem
 $navbar-item-color: $black
 
+.top-bar
+  padding: 0.35em 0
+  display: flex
+  width: 100%
+  font-size: $size-7
+  font-style: italic
+  text-align: right
+  background-color: $grey-lightest
+
 .navbar
+  flex-basis: 100%
+  flex-wrap: wrap
+
   .navbar-menu
     box-shadow: none !important
 
@@ -9,6 +22,12 @@ $navbar-item-color: $black
   font-size: $size-7
   font-weight: $weight-bold
   text-transform: uppercase
+
+  .navbar-brand &
+    font-size: $size-3
+    font-weight: 800
+    font-style: italic
+    letter-spacing: -3.2px
 
   .icon
     color: $primary
