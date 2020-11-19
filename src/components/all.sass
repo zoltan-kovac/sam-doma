@@ -1,16 +1,36 @@
-@import "~bulma/sass/utilities/initial-variables"
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-$family-sans-serif: "Open Sans"
+
+// Colors
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+$grey-lightest: hsl(0, 0%, 93%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 53%,  53%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$cyan:         hsl(204, 71%,  53%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 86%, 61%) !default
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
-$footer-background-color: $black
+$family-sans-serif: "Open Sans", sans-serif !default
 
-
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: #ff312b
 $black: #2b2523
 $body-background-color: $black-ter
 $body-color: $grey-light
@@ -18,11 +38,24 @@ $body-size: 18px
 $size-7: 0.8rem
 $size-8: 0.75rem
 
-$weight-extra-bold: 800
+//Menu overrides
+// $menu-item-color: $white-ter
+// $menu-item-hover-color: $black !important
+// $menu-item-hover-background-color: $black
+// $menu-item-active-color: $kaldi-red-invert
+// $menu-item-active-background-color:	$kaldi-red-invert
+// $menu-list-border-left: 1px solid $kaldi-red-invert
+// $menu-label-color: $white-ter
 
+$footer-background-color: $black
+$weight-extra-bold: 800
 $content-heading-color: $grey-lighter
+@import button/button
+
+@import "~bulma/bulma.sass"
 
 @import navbar/navbar
+@import hero/hero
 
 .content .taglist
   list-style: none
@@ -62,23 +95,6 @@ $content-heading-color: $grey-lighter
     justify-content: center
     align-items: center
 
-.btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #CC3700
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
-
 .margin-top-0
   margin-top: 0 !important
 
@@ -90,16 +106,6 @@ $content-heading-color: $grey-lighter
 
 footer.footer
   padding: 3rem 0rem 0rem
-
-//Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important
